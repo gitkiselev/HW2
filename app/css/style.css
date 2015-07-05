@@ -351,10 +351,14 @@ ul {
 	font-size: 14px;
 	font-weight: bold;
 }
-/*.active {
+.active {
 	background-color: #22B6FE;
 	color: #fff;
-}*/
+}
+.active.catalog-menu__link:hover {
+	background-color: #22b6fe;
+	color: #fff;
+}
 /*правая часть*/
 .catalog-goods-wrapper {
 	float: right;
