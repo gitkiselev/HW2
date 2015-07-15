@@ -371,12 +371,6 @@ ul {
 	display: inline-block;
 	max-width: 100%;
 	max-height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
 }
 .catalog-goods-list {
 	margin-bottom: 39px;
@@ -400,6 +394,7 @@ ul {
 	margin-right: 25px;
 	margin-bottom: 24px;
 }
+
 .catalog-goods-container {
 	display: block;
 	font-size: 0px;
@@ -414,29 +409,28 @@ ul {
 	width: 230px;
 	min-height: 354px;
 }
+
+
 .catalog-goods-image-wrapper {
-	width: 141px;
-	height: 121px;
-	margin: 0 auto;
-	position: relative;
-	margin: 0 30px 30px 0;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	width: 140px;
+	height: 100px;
 }
-.catalog-goods-list--grid .catalog-goods-image-wripper {
-	margin: 0 auto 30px;
-	width: 141px;
-	height: 121px;
-	position: relative;
+.catalog-goods-list--grid .catalog-goods-image-wrapper {
+	width: 160px;
+	height: 120px;
+	margin: 0 30px 30px 30px;
 }
-.catalog-goods-list--grid .catalog-goods-image-wripper img {
-	display: inline-block;
+
+.catalog-goods-image-wrapper img {
+	display: inline;
+}
+
+.catalog-goods-list--grid .catalog-goods-image-wrapper img {
 	max-width: 100%;
 	max-height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
+	display: inline;
 }
 .catalog-goods-image-wrapper,
 .catalog-goods__desc {
@@ -528,7 +522,7 @@ ul {
 	font-size: 15px;
 	color: #5e7a98;
 }
-/*to top button*/
+
 
 /*page-footer*/
 .page-footer {
