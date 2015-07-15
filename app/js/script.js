@@ -130,12 +130,6 @@ $(document).ready(function() {
 					$(this).next().stop(true,true).slideToggle('normal');
 					accordion_head.removeClass('active');
 					$(this).addClass('active');
-					/*$(this).hover(function(){
-						$(this).hasClass('active').css({
-							'background-color': '#22b6fe',
-							'color': '#fff'
-						});
-					});*/
 				}
 
 			});

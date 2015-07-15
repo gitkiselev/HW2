@@ -30,6 +30,7 @@ html {
 	min-height: 100%;
 	height: auto!important;
 	overflow: hidden;
+	min-width: 1280px;
 }
 .wrapper:after {
 	content: "";
@@ -38,6 +39,7 @@ html {
 }
 .page-footer{
 	height: 238px;
+	min-width: 1280px;
 	margin-top: -238px;	
 }
 /* прибьём футер к низу - конец*/
@@ -364,16 +366,17 @@ ul {
 	float: right;
 	width: 750px;/**/
 }
-/*для картинок*/
-.catalog-goods-list--grid .catalog-goods-image-wrapper {
-	width: 100%;
-	margin: 0 30px 30px;
-	
-}
+
 .catalog-goods-image-wrapper img {
-	max-width: 141px;
-	max-height: 121px;
-	text-align: center;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 .catalog-goods-list {
 	margin-bottom: 39px;
@@ -414,17 +417,26 @@ ul {
 .catalog-goods-image-wrapper {
 	width: 141px;
 	height: 121px;
-	margin-right: 30px;
-	margin-bottom: 30px;
+	margin: 0 auto;
+	position: relative;
+	margin: 0 30px 30px 0;
 }
 .catalog-goods-list--grid .catalog-goods-image-wripper {
-	margin-bottom: 30px;
-	margin-right: 0;
+	margin: 0 auto 30px;
 	width: 141px;
 	height: 121px;
+	position: relative;
 }
 .catalog-goods-list--grid .catalog-goods-image-wripper img {
-	/********??**********/
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 .catalog-goods-image-wrapper,
 .catalog-goods__desc {
