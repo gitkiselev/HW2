@@ -30,7 +30,7 @@ html {
 	min-height: 100%;
 	height: auto!important;
 	overflow: hidden;
-	min-width: 1280px;
+	min-width: 1200px;
 }
 .wrapper:after {
 	content: "";
@@ -39,7 +39,7 @@ html {
 }
 .page-footer{
 	height: 238px;
-	min-width: 1280px;
+	min-width: 1200px;
 	margin-top: -238px;	
 }
 /* прибьём футер к низу - конец*/
@@ -57,8 +57,8 @@ html {
 	width: 100%;
 	background-color: #EFF4F9;
 	height: 120px;
-	margin-bottom: 82px;
-	padding-top: 24px;
+	margin-bottom: 42px;
+	padding-top: 21px;
 	}
 .container {
 	width: 1000px;
@@ -73,11 +73,15 @@ ul {
 .page-header__logo-wrapper {
 	float: left;
 	width: 199px;
-	margin-bottom: 15px;
+	margin-top: 4px;
+	margin-bottom: 14px;
 }
 .page-header__contacts-wrapper {
 	float: right;
 	width: 190px;
+}
+.page-header__contacts {
+	margin-bottom: 4px;
 }
 .page-header__phone {
 	display: block;
@@ -119,8 +123,7 @@ ul {
 	text-decoration: none;
 	background-color: #f7f7f7;
 	height: 40px;
-	
-	padding: 12px 9px 14px 27px;
+	padding: 12px 8px 14px 30px;
 	z-index: 7;
 	
 }
@@ -241,7 +244,7 @@ ul {
 }
 /*Блок main-content*/
 .site-location {
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 .site-location__catalog-wrapper {
 	float: left;
@@ -267,6 +270,8 @@ ul {
 .site-location-pages-wrapper {
 	float: right;
 	width: 120px;
+	margin-top: 2px;
+	margin-right: -7px;
 }
 .site-location-pages {
 	margin-right: -7px;
@@ -274,11 +279,12 @@ ul {
 .site-location-pages__item {
 	float: left;
 	font-size: 15px;
-	margin-right: 7px;
+	margin-right: 8px;
 }
 .site-location-pages__link {
 	color: #22b6fe;
 	text-decoration: underline;
+	line-height: 19px;/*выравнивание полосы подчеркивания*/
 }
 .site-location-pages__current-link {
 	text-decoration: none;
@@ -289,8 +295,9 @@ ul {
 /*левое меню и каталог товаров*/
 /*select стилизация*/
 .catalog-view {
+	width: 133px;
 	height: 26px;
-	padding: 5px 68px 5px 7px;
+	padding: 5px 0px 5px 7px;
 	border: 1px solid #dae1eb;
 	background: url(../img/select.png) right no-repeat;
 	font-size: 14px;
@@ -301,12 +308,13 @@ ul {
 }
 .pos-view {
 	float: right;
-	margin-top: -8px;
+	margin-top: -5px;
 	margin-right: 31px;
 }
 .catalog-menu-wrapper {
 	float: left;
-	width: 220px;/*188*/
+	width: 230px;
+	height: 350px;
 }
 .catalog-menu__item-list {
 	display: block;/*none*/
@@ -315,11 +323,13 @@ ul {
 	background-color: #f7f7f7;
 	font-size: 15px;
 }
+
 .catalog-menu__link {
 	color: #5E7A98;
 	position: relative;
 	display: block;
-	padding: 9px 14px;
+	/*padding: 5px 19px;*/
+	padding: 7px 19px 4px 19px;
 	text-decoration: none;
 	font-size: 15px;
 	border-top: 1px solid #fff;
@@ -335,11 +345,11 @@ ul {
 	position: relative;
 	display: block;
 	color: #5E7A98;
-	padding: 6px 22px;
+	/*padding: 6px 27px;*/
+	padding: 6px 23px 5px 31px;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #dae1eb;
 	text-decoration: none;
-	
 }
 .catalog-menu__item-link:hover {
 	background-color: #DCE6F0;
@@ -347,10 +357,10 @@ ul {
 .catalog-menu__item-link:before {
 	content: '>';
 	position: absolute;
-	left: 10px;
-	top: 7px;
+	left: 18px;
+	top: 9px;
 	display: block;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: bold;
 }
 .active {
@@ -364,7 +374,7 @@ ul {
 /*правая часть*/
 .catalog-goods-wrapper {
 	float: right;
-	width: 750px;/**/
+	width: 740px;
 }
 
 .catalog-goods-image-wrapper img {
@@ -373,9 +383,12 @@ ul {
 	max-height: 100%;
 }
 .catalog-goods-list {
-	margin-bottom: 39px;
+	margin-bottom: 40px;
+	font-size: 0;
+}
+.catalog-goods-list--grid {
+	font-size: 0;
 	margin-right: -25px;
-	
 }
 .catalog-goods__item {
 	border: 1px solid #dae1eb;
@@ -412,25 +425,24 @@ ul {
 
 
 .catalog-goods-image-wrapper {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	width: 140px;
-	height: 100px;
+	margin: 0px 21px 0px 10px;
+	width: 132px;
+	height: 121px;
 }
 .catalog-goods-list--grid .catalog-goods-image-wrapper {
-	width: 160px;
-	height: 120px;
-	margin: 0 30px 30px 30px;
+	width: 164px;
+	height: 143px;
+	margin: 18px 31px 0 31px;
 }
 
 .catalog-goods-image-wrapper img {
-	display: inline;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .catalog-goods-list--grid .catalog-goods-image-wrapper img {
 	max-width: 100%;
 	max-height: 100%;
-	display: inline;
 }
 .catalog-goods-image-wrapper,
 .catalog-goods__desc {
@@ -439,6 +451,7 @@ ul {
 .catalog-goods__desc {
 	width: 500px;
 	vertical-align: top;
+	margin-top: 9px;
 }
 .catalog-goods-list--grid .catalog-goods__desc {
 	width: 180px;
@@ -450,7 +463,7 @@ ul {
 	font-size: 15px;
 	color: #22b6fe;
 	text-decoration: underline;
-	margin-bottom: 21px;
+	margin-bottom: 18px;
 }
 .catalog-goods-list--grid .catalog-goods__header {
 	width: 190px;
@@ -509,20 +522,26 @@ ul {
 }
 /*Пара слов о магазине*/
 .about-us-wrapper {
-	margin-bottom: 76px;
+	margin-bottom: 77px;
 }
 .about-us {
 	
 }
 .about-us__header {
 	font-size: 25px;
+	line-height: 20px;
 	color: #5e7a98;
+	margin-bottom: 14px;
 }
 .about-us__info {
 	font-size: 15px;
 	color: #5e7a98;
 }
-
+.about-us__info-part {
+	margin: 0; /*сбросим встроенный margin*/
+	margin-bottom: 19px;
+	line-height: 20px;
+}
 
 /*page-footer*/
 .page-footer {
@@ -537,13 +556,15 @@ ul {
 
 	margin-right: 115px;
 	position: relative;
-	top: -36px;/**/
+	top: -36px;
 }
 .page-footer__contacts-header {
 	color: #fff;
 	font-size: 15px;
 	font-weight: bold;
+	margin-bottom: 5px;
 }
+
 .page-footer__contacts-link {
 	font-size: 15px;
 	line-height: 25px;
@@ -560,6 +581,7 @@ ul {
 }
 .page-footer__store-item {
 	display: inline-block;
+	margin-right: 5px;
 	
 }
 .page-footer__store-link {
@@ -578,16 +600,20 @@ ul {
 }
 .page-footer__contacts-links-wrapper {
 	margin-top: 60px;
-	/*margin-right: 120px;*/
+	margin-right: 42px;
 }
 .page-footer__contacts-links {
-	margin-right: 70px;
+	margin-right: 68px;
 }
 .social-name {
 	display: none;
 }
+.page-footer__social-list {
+	font-size: 0;/*убираем пробелы у элементов списка*/
+}
 .page-footer__social-item {
 	display: inline-block;
+	margin-right: 8px;
 }
 .page-footer__social-link {
 	width: 44px;
@@ -604,7 +630,10 @@ ul {
 	background-image: url(../img/tw.png);
 }
 .page-footer__store-list {
-	margin-bottom: 20px;
+	margin-bottom: 26px;
+	margin-left: 3px;
+	font-size: 0;
+	margin-right: -5px;
 }
 /*Кнопка наверх*/
 .to-top {
@@ -619,8 +648,8 @@ ul {
 	font-weight: bold;
 	text-align: center;
 	cursor: pointer;
-	right: -120px;
-	bottom: 40px;
+	right: -90px;
+	bottom: 54px;
 }
 .to-top:before,
 .to-top:after {
