@@ -13,7 +13,7 @@ $(document).ready(function(){
 		return false;
 	});
 	$('#catalog-view').on('change', function(){
-		console.log('смена селекта');
+		//console.log('смена селекта');
 		var
 			$this = $(this),
 			list  = $('.catalog-goods-list'),
