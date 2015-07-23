@@ -101,6 +101,7 @@ ul {
 .page-header__phone-code {
 	color: #22b6fe;
 	font-size: 17px;
+	font-weight: bold;
 	vertical-align: top;
 }
 .page-header__email {
@@ -117,7 +118,54 @@ ul {
 	font-size: 15px;
 	overflow: hidden;
 }
+/*Стили для совместимости с IE8*/
 .page-header__menu-item {
+	float: left;
+	margin-left: -11px;
+}
+.page-header__menu-item:first-child {
+	margin-left: 0;
+}
+.page-header__menu-link {
+	background: url(../img/nav-item.png) 0 0 no-repeat;
+	padding-left: 14px;
+	height: 42px;
+	display: block;
+	text-decoration: none;
+}
+.page-header__menu-link:hover {
+	background-position: 0 -55px;
+}
+.page-header__menu-link:hover .page-header__menu-text {
+	background-position: right -55px;
+}
+.page-header__menu-text {
+	background: url("../img/nav-item.png") right 0 no-repeat;
+  	padding-right: 27px;
+  	padding-left: 8px;
+  	height: 42px;
+  	text-align: center;
+  	line-height: 42px;
+  	display: block;
+  	font-size: 15px;
+  	/*font-family: 'elektra_medium_proregular';*/
+  	color: #5c7b98;
+}
+/*Активный пункт меню*/
+.page-header__menu-link--current:hover, .page-header__menu-link--current {
+	background: url(../img/nav-item.png) 0 -110px;
+	color: #fff;
+}
+.page-header__menu-link--current .page-header__menu-text, .page-header__menu-link--current .page-header__menu-text:hover {
+	background: url(../img/nav-item.png) right -110px;
+	color: #fff;
+}
+/*при наведении на левый угол закрашивался span*/
+.page-header__menu-link--current:hover .page-header__menu-text  {
+	background-position: right -110px;
+}
+
+/*.page-header__menu-item {
 	float: left;
 	position: relative;
 	border-bottom: 1px solid #E3E3E3;
@@ -143,7 +191,7 @@ ul {
 	display: block;
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
-	border-left: 15px solid #dde3ec;/*f7f7f7*/
+	border-left: 15px solid #dde3ec;
 	width: 0;
 	height: 0;
 	top: 50%;
@@ -204,7 +252,7 @@ ul {
 	padding-right: 8px;
 	padding-left: 27px;
 }
-/*Вырезаем треугольник*/
+/*Вырезаем треугольник
 .page-header__menu-item:first-child {
 	padding-left: 15px;
 }
@@ -234,14 +282,14 @@ ul {
 	border-bottom-color: #f7f7f7;
 	border-left-width: 15px;
 }
-/*Hover первой ссылки*/
+/*Hover первой ссылки
 .page-header__menu-item:first-child:hover:before {
 	border-right-color: #dce6f0;
 }
 .page-header__menu-item:hover:after {
 	border-bottom-color: #dce6f0;
 }
-/*Активный пункт меню*/
+/*Активный пункт меню
 .page-header__menu-link--current {
 	background-color: #22B6FE;
 	color: #fff;
@@ -314,11 +362,11 @@ ul {
 	appearance: none;
 	outline: none;
 }
-.pos-view {
+/*.pos-view {
 	float: right;
 	margin-top: -5px;
 	margin-right: 31px;
-}
+}*/
 .catalog-menu-wrapper {
 	float: left;
 	width: 230px;
@@ -391,7 +439,7 @@ ul {
 	max-height: 100%;
 }
 .catalog-goods-list {
-	margin-bottom: 40px;
+	margin-bottom: 41px;
 	font-size: 0;
 }
 .catalog-goods-list--grid {
@@ -419,7 +467,7 @@ ul {
 .catalog-goods-container {
 	display: block;
 	font-size: 0px;
-	padding:24px 30px;
+	padding:33px 31px;
 	height: inherit;
 }
 .catalog-goods-list--grid .catalog-goods-container {
@@ -470,7 +518,7 @@ ul {
 	font-size: 15px;
 	color: #22b6fe;
 	text-decoration: underline;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
 .catalog-goods-list--grid .catalog-goods__header {
 	width: 187px;
@@ -487,6 +535,9 @@ ul {
 	font-size: 14px;
 	color: #5e7a98;
 	text-decoration: none;
+}
+.catalog-goods__item-list {
+	line-height: 20px;
 }
 .catalog-goods-list--grid .catalog-goods__info {
 	display: inline-block;
@@ -512,10 +563,15 @@ ul {
 	display: inline-block;
 	margin: 0;
 }
+.catalog-goods__value--end {
+	display: inline-block;
+	margin: 0;
+}
 .catalog-goods__value:after {
 	content: ',';
 }
-.catalog-goods__title--end:after {
+/*Убираем последнюю запятую*/
+.catalog-goods__value--end:after {
 	content: '';
 }
 .catalog-goods-list--grid .catalog-goods__value {
@@ -530,7 +586,7 @@ ul {
 }
 /*Пара слов о магазине*/
 .about-us-wrapper {
-	margin-bottom: 77px;
+	margin-bottom: 78px;
 }
 .about-us {
 	
@@ -539,7 +595,7 @@ ul {
 	font-size: 25px;
 	line-height: 20px;
 	color: #5e7a98;
-	margin-bottom: 14px;
+	margin-bottom: 12px;
 }
 .about-us__info {
 	font-size: 15px;
