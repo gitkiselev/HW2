@@ -87,7 +87,7 @@ ul {
 }
 .page-header__contacts-wrapper {
 	float: right;
-	width: 190px;
+	width: 192px;/*190 192 - для Firefox 40 beta*/
 }
 .page-header__contacts {
 	margin-bottom: 4px;
