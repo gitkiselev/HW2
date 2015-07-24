@@ -462,6 +462,7 @@ ul {
 	min-height: 354px;
 	margin-right: 25px;
 	margin-bottom: 24px;
+	vertical-align: top;/*чтобы два блока не съезжали в IE8*/
 }
 
 .catalog-goods-container {
